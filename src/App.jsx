@@ -1,6 +1,6 @@
 import { useState } from "react";
 import GlobalStyles from "./styles/globalStyles.js";
-import { Home } from "./pages/Home/index.jsx";
+import { Home } from "./pages/home/index.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
