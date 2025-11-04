@@ -11,10 +11,10 @@ import { useState } from "react";
 import IconLetters from "../../assets/letters/loveLetters.svg";
 
 // Imports das cartas
-import Carta1 from "../../assets/letters/Carta-DiaDosNamorados-12-06-2025.svg";
-import Carta2 from "../../assets/letters/Carta-DiaDosNamorados-12-06-2025-Yasmin.svg";
-import Carta3 from "../../assets/letters/Carta-05-07-2025.svg";
-import Carta4 from "../../assets/letters/Carta-21-10-2025.svg";
+import Carta1 from "../../assets/letters/cartaDiaDosNamorados-12-06-2025.svg";
+import Carta2 from "../../assets/letters/cartaDiaDosNamorados-12-06-2025-Yasmin.svg";
+import Carta3 from "../../assets/letters/carta-05-07-2025.svg";
+import Carta4 from "../../assets/letters/carta-21-10-2025.svg";
 
 const listLetters = [
   {
