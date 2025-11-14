@@ -58,7 +58,23 @@ export const Title = styled.span`
   color: #ea5f9d;
 `;
 
-export const MenuIcon = styled.img`
+export const MenuIconButton = styled.button`
   width: 3rem;
   height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ea5f9d;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 `;

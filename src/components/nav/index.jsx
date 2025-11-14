@@ -5,10 +5,10 @@ import {
   ContainerMenu,
   Logo,
   Title,
-  MenuIcon,
+  MenuIconButton,
 } from "./styles";
 import Icon from "../../../public/coracao.png";
-import Menu from "../../../public/menu.svg";
+import { Menu } from "lucide-react";
 
 export function Nav({ title }) {
   function toggleDisplay(elementId) {
@@ -39,12 +39,13 @@ export function Nav({ title }) {
           <Logo src={Icon} alt="Logo" />
           <Title>{title}</Title>
         </ContainerLogo>
-        <MenuIcon
+        <MenuIconButton
           id="menu"
-          src={Menu}
-          alt="Menu Icon"
           onClick={() => toggleDisplay("container-menu")}
-        />
+          aria-label="Menu"
+        >
+          <Menu size={24} />
+        </MenuIconButton>
       </ContainerNav>
       <ContainerMenu id="container-menu">
         <ul>
