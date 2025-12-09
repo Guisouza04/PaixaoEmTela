@@ -38,7 +38,7 @@ export const Portrait = styled.div`
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  aspect-ratio: 3/4;
+  /* Let the image determine its own height on mobile (fixes iPhone flattening) */
 
   @media (min-width: 768px) {
     flex: 0 0 45%;
@@ -51,9 +51,11 @@ export const Portrait = styled.div`
 
 export const Photos = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
   user-select: none;
   pointer-events: none;
+  -webkit-user-drag: none;
 `;
